@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: #dc2626;
+  --green: #22c55e;
+  --lightgreen: #dcfce7;
+  --yellow: #eab308;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #556987;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+a {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+/* ############ BUTTONS ######## */
+.green-btn {
+  background-color: #22c55e;
+  color: var(--white);
+}
+/* ########### HEADER #############  */
+header {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+}
+header .logo {
+  width: 200px;
+}
+header .logo img {
+  width: 100%;
+}
+
+header .menu ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+header .menu ul li a {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-right: 3.5rem;
+  color: var(--black);
+  font-weight: 400;
+}
+
+header .grp-buttons .ud-btn {
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+header .grp-buttons .toggle {
+  width: 45px;
+  height: 45px;
+  /* background-color: #dc2626; */
+  position: relative;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+header .grp-buttons .toggle span {
+  width: 30px;
+  height: 2.5px;
+  border-radius: 100px;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  transition: 0.3s ease-in-out;
+}
+header .grp-buttons .toggle span:nth-child(1) {
+  transform: translateY(10px);
+  left: 10px;
+}
+header .grp-buttons .toggle span:nth-child(2) {
+  transform: translateY(0px);
+  width: 35px;
+}
+header .grp-buttons .toggle span:nth-child(3) {
+  transform: translateY(-10px);
+  left: 10px;
+}
+
+header .grp-buttons .toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+header .grp-buttons .toggle.active span:nth-child(2) {
+  transform: translateX(100px);
+}
+header .grp-buttons .toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
