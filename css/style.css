@@ -52,9 +52,17 @@ p {
   background-color: #22c55e;
   color: var(--white);
 }
+.green-btn:hover {
+  transition: 0.5s;
+  color: var(--black);
+}
 .yellow-btn {
   background-color: var(--yellow);
   color: var(--black);
+}
+.yellow-btn:hover {
+  transition: 0.5s;
+  color: var(--white);
 }
 /* ########### HEADER #############  */
 header {
@@ -168,7 +176,7 @@ header .grp-buttons .toggle.active span:nth-child(3) {
 }
 
 .ud-video .vi-img {
-  width: 1200px;
+  width: 95%;
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -225,6 +233,9 @@ header .grp-buttons .toggle.active span:nth-child(3) {
     flex-direction: column;
     margin-top: 2rem;
   }
+  header .menu ul li {
+    width: 100%;
+  }
   header .menu ul li a {
     display: block;
     margin-right: 0px;
@@ -241,5 +252,6 @@ header .grp-buttons .toggle.active span:nth-child(3) {
     width: 100%;
     border-radius: 0;
     text-align: center;
+    z-index: 99;
   }
 }
