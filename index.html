@@ -20,7 +20,7 @@
               <div class="logo">
                 <img src="img/logo.svg" alt="" />
               </div>
-              <div class="menu">
+              <div class="menu" id="menu">
                 <ul class="d-flex align-items-center">
                   <li><a href="">Home</a></li>
                   <li><a href="">About</a></li>
@@ -31,7 +31,7 @@
               </div>
               <div class="grp-buttons d-flex align-items-center">
                 <a href="#" class="ud-btn green-btn">Get Started</a>
-                <div class="toggle  id="toggle">
+                <div class="toggle" id="toggle">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -42,10 +42,105 @@
         </div>
       </div>
     </header>
+    <!-- ################## HERO ################  -->
+    <section class="ud-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <label>Digital Marketing Agency</label>
+              <h1>
+                Advanced analytics to grow<br />
+                your business
+              </h1>
+              <p>
+                Get a website to be found on the first page of Google to<br />
+                avoid missing out on potential visitors and sales.
+              </p>
+              <div class="grp-buttons">
+                <a href="#" class="ud-btn green-btn">
+                  <span class="title">Start free trail</span>
+                  <span class="icon"
+                    ><ion-icon name="arrow-forward-outline"></ion-icon
+                  ></span>
+                </a>
+                <a href="#" class="ud-btn yellow-btn">
+                  <span class="title">Learn more</span>
+                  <span class="icon"
+                    ><ion-icon name="arrow-forward-outline"></ion-icon
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ############## VIDEO SECTION ###############  -->
+    <section class="ud-video">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vi-img">
+              <img src="img/bg.jpg" alt="" />
+              <div class="vi-icon">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close ud-close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/mFpBsQ-JZjE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- JAVASCRIPT -->
     <script src="js/app.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
