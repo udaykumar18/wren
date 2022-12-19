@@ -6,12 +6,17 @@
 }
 :root {
   --red: #dc2626;
+  --lightred: #fee2e2;
   --green: #22c55e;
   --lightgreen: #dcfce7;
   --yellow: #eab308;
+  --lightyellow: #fcf3d9;
   --black: #000000;
   --white: #ffffff;
   --gray: #556987;
+  --boxcolor1: #d4ffe4;
+  --boxcolor2: #d4efff;
+  --boxcolor3: #fff0d4;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -41,12 +46,30 @@ a {
 p {
   font-size: 1.6rem;
 }
+ul {
+  padding-left: 0;
+}
 /* ############ BUTTONS ######## */
 
 .ud-btn {
   padding: 1rem 3rem;
   border-radius: 100px;
   font-weight: 600;
+}
+.ud-btn .icon {
+  font-size: 1.8rem;
+  position: relative;
+  top: 3px;
+}
+.red-btn {
+  background-color: var(--red);
+  color: var(--white);
+}
+.black-btn {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0;
+  padding: 1rem 2rem;
 }
 .green-btn {
   background-color: #22c55e;
@@ -63,6 +86,29 @@ p {
 .yellow-btn:hover {
   transition: 0.5s;
   color: var(--white);
+}
+/* ############ UTILITY CLASSES ############  */
+
+.section-heading h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+.section-heading p {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+.boxshadow1 {
+  box-shadow: 18px 18px 0px var(--boxcolor1) !important;
+}
+
+.boxshadow2 {
+  box-shadow: 18px 18px 0px var(--boxcolor2) !important;
+}
+
+.boxshadow3 {
+  box-shadow: 18px 18px 0px var(--boxcolor3) !important;
 }
 /* ########### HEADER #############  */
 header {
@@ -211,6 +257,248 @@ header .grp-buttons .toggle.active span:nth-child(3) {
 }
 .ud-close-btn svg {
   fill: var(--white);
+}
+
+/* ############# SERVICES ############  */
+
+.services {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+  margin-top: 5rem;
+}
+
+.services-content {
+  width: 100%;
+
+  margin: 5rem 0;
+}
+.services-content .services-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--red);
+  margin: 0 auto;
+  border-radius: 10px;
+  line-height: 55px;
+}
+.services-content .services-icon img {
+  width: 50%;
+}
+.services-content h4 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+.services-content p {
+  font-size: 1.7rem;
+  color: var(--gray);
+  margin-top: 1.7rem;
+}
+
+/* ############ WHAT WE DO #########  */
+.ud-what {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+}
+.ud-what .what-content {
+  padding: 0rem 3rem;
+}
+.ud-what .what-content label {
+  font-size: 1.6rem;
+  color: var(--red);
+  background-color: var(--lightred);
+  padding: 0.7rem 3rem;
+  border-radius: 100px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.ud-what .what-content h2 {
+  color: var(--black);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.ud-what .what-content p {
+  color: var(--black);
+  font-size: 1.9rem;
+  margin: 3rem 0;
+}
+/* ################## FEEDBACK ##################  */
+.ud-feedback {
+  width: 100%;
+  height: auto;
+  padding: 10rem 0;
+  background-color: var(--lightyellow);
+}
+.ud-feedback .feed-content {
+  padding: 0rem 3rem;
+}
+.ud-feedback .feed-content label {
+  font-size: 1.6rem;
+  color: var(--black);
+  background-color: var(--yellow);
+  padding: 0.7rem 3rem;
+  border-radius: 100px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.ud-feedback .feed-content h2 {
+  color: var(--black);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.ud-feedback .feed-content p {
+  color: var(--black);
+  font-size: 1.9rem;
+  margin: 3rem 0;
+}
+
+.feedback {
+  width: 100%;
+  background-color: var(--white);
+  padding: 3rem;
+}
+
+.feedback .profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  margin-right: 1rem;
+}
+.feedback .profile-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.feedback .profile-content label {
+  font-size: 1.3rem;
+  color: var(--gray);
+}
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper .md {
+  font-size: 2rem;
+}
+
+/* ################## FAQ ##################  */
+.ud-faq {
+  width: 100%;
+  height: auto;
+  padding: 10rem 0;
+}
+.accordion {
+  margin-top: 5rem;
+}
+.ud-faq .accordion-item .accordion-button {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2.5rem 1rem;
+}
+
+.ud-faq .accordion-item p {
+  font-size: 1.5rem;
+}
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--white);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: var(--black);
+}
+/* ############# BLOG ############  */
+.ud-blog {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+}
+
+.blog-card {
+  margin-top: 10rem;
+}
+
+.blog-card .blog-label .dot {
+  display: inline-block;
+  background-color: var(--black);
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+.blog-card .blog-label label {
+  font-size: 1.5rem;
+}
+.blog-card .blog-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.blog-card .blog-img {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 18px 18px 0px var(--boxcolor1);
+}
+.blog-card .blog-img img {
+  width: 100%;
+  border-radius: 10px;
+
+  margin-top: 10px;
+}
+
+/* ############## FOOTER #################  */
+footer {
+  width: 100%;
+  height: auto;
+}
+footer .logo {
+  width: 200px;
+}
+footer .logo img {
+  width: 100%;
+}
+
+.footer-card {
+  margin: 5rem 0;
+}
+.footer-card h3 {
+  font-size: 2.2rem;
+}
+.footer-card .contact-info li {
+  font-size: 1.8rem;
+  line-height: 40px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.footer-card .contact-info a {
+  color: var(--gray);
+  font-size: 1.8rem;
+}
+
+.footer-card ul li {
+  line-height: 30px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.footer-card a {
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+/* ############# COPYRIGHT ###############  */
+.copyright {
+  width: 100%;
+  height: auto;
+}
+.copyright ul li a {
+  font-size: 2rem;
+  color: var(--black);
+  margin-right: 2rem;
 }
 /* MEDIA QURES  */
 
