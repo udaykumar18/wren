@@ -301,6 +301,12 @@ header .grp-buttons .toggle.active span:nth-child(3) {
   height: auto;
   padding: 5rem 0;
 }
+.ud-what .what-img {
+  width: 100%;
+}
+.ud-what .what-img img {
+  width: 100%;
+}
 .ud-what .what-content {
   padding: 0rem 3rem;
 }
@@ -513,6 +519,7 @@ footer .logo img {
     backdrop-filter: blur(7px);
     transform: translateX(-1000%);
     transition: 0.3s ease-in-out;
+    z-index: 88;
   }
   .menu.active {
     transform: translateX(0%);
@@ -542,4 +549,211 @@ footer .logo img {
     text-align: center;
     z-index: 99;
   }
+  .ud-hero h1 {
+    font-size: 4.5rem;
+  }
+  .ud-video .vi-img {
+    width: 100%;
+  }
+  .ud-video .vi-img a {
+    font-size: 8rem;
+  }
+  .section-heading h2 {
+    font-size: 4rem;
+  }
+  .section-heading p {
+    font-size: 1.5rem;
+  }
+  .ud-what .what-content h2 {
+    font-size: 3rem;
+    margin-bottom: -2rem;
+  }
+  .ud-what .what-content p {
+    font-size: 1.4rem;
+  }
+
+  .ud-feedback .feed-content {
+    margin-bottom: 8rem;
+  }
+  .blog-card .blog-label label {
+    font-size: 1.2rem;
+  }
+  .blog-card .blog-label .dot {
+    width: 7px;
+    height: 7px;
+  }
+  .blog-card .blog-title {
+    font-size: 2rem;
+  }
+  .footer-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .footer-card .contact-info li {
+    font-size: 1.4rem;
+  }
+  .footer-card .contact-info a {
+    font-size: 1.4rem;
+  }
+  .footer-card a {
+    font-size: 1.2rem;
+  }
 }
+
+@media only screen and (max-width: 767px) {
+  .ud-hero h1 {
+    font-size: 3.5rem;
+  }
+  .ud-hero p {
+    font-size: 1.6rem;
+  }
+  .ud-what {
+    text-align: center;
+  }
+  .ud-what .what-img img {
+    width: 60%;
+  }
+  .ud-what .what-content {
+    margin-top: 4rem;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+  footer .logo img {
+    margin-bottom: 3rem;
+  }
+  .footer-card {
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .ud-hero h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  .ud-hero p {
+    font-size: 1.5rem;
+  }
+  .ud-hero .grp-buttons a {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .section-heading h2 {
+    font-size: 3rem;
+  }
+  .ud-what .what-content h2 {
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+  .ud-feedback .feed-content h2 {
+    font-size: 3rem;
+  }
+  .ud-feedback .feed-content p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .ud-btn {
+    font-size: 1.4rem;
+  }
+  .ud-btn .icon {
+    font-size: 1.4rem;
+  }
+  .ud-hero label {
+    font-size: 1.2rem;
+  }
+  .ud-hero h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  .ud-hero p {
+    font-size: 1.2rem;
+  }
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+  .section-heading p {
+    font-size: 1.2rem;
+  }
+  .services-content {
+    margin: 3rem 0;
+  }
+  .services-content h4 {
+    font-size: 2rem;
+  }
+  .services-content p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+  .feedback .profile {
+    margin-top: 2rem;
+  }
+  .feedback .profile img {
+    width: 50px;
+    height: 50px;
+  }
+  .feedback .profile-content h4 {
+    font-size: 1.2rem;
+  }
+  .feedback .profile-content label {
+    font-size: 1.1rem;
+  }
+
+  .blog-card {
+    margin-top: 5rem;
+    padding: 0 1rem;
+  }
+
+  .ud-hero .grp-buttons a {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header .logo img {
+    width: 80%;
+  }
+  .ud-hero p {
+    font-size: 1.1rem;
+  }
+  .ud-video .vi-img a {
+    font-size: 5rem;
+  }
+  .section-heading p {
+    font-size: 1rem;
+  }
+  .ud-what .what-content label {
+    font-size: 1.4rem;
+  }
+  .ud-what .what-content h2 {
+    font-size: 2.5rem;
+  }
+  .ud-what .what-content p {
+    font-size: 1.2rem;
+  }
+  .ud-feedback .feed-content label {
+    font-size: 1.4rem;
+  }
+  .ud-feedback .feed-content h2 {
+    font-size: 2.5rem;
+  }
+  .ud-feedback .feed-content p {
+    font-size: 1.4rem;
+  }
+
+  .ud-faq .accordion-item .accordion-button {
+    font-size: 1.5rem;
+  }
+  .ud-faq .accordion-item p {
+    font-size: 1.3rem;
+  }
+
+  .footer-logo p {
+    font-size: 1rem;
+  }
+  .footer-logo p a {
+    font-size: 1.2rem;
+  }
+} /* 992 767 576 420 320  */
