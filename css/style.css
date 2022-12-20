@@ -756,4 +756,8 @@ footer .logo img {
   .footer-logo p a {
     font-size: 1.2rem;
   }
+  .ud-hero .grp-buttons a {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 } /* 992 767 576 420 320  */
